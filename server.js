@@ -28,7 +28,7 @@ app.use("/api/v1/events", require("./route/eventRoute.js"));
 app.use("/api/v1/auth", require("./route/authRoute.js"));
 
 //PORT number
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 //Listening the PORT
 app.listen(PORT, () => {
